@@ -1,0 +1,134 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    font-family: rubik;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bigContainer {
+    position: relative;
+    height: 100vh;
+}
+
+.topBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;
+    height:30%; */
+    height: 40%;
+    gap: 12%;
+    background-image: url("./assets/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: 600;
+}
+
+#searchContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
+}
+
+#searchBox {
+    display: flex;
+    /* flex-direction: row; */
+    width: 300px;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    padding-left: 15px;
+}
+
+#searchButton {
+    background-color: black;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+}
+
+.popUp {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    width: 800px;
+    height: 120px;
+    background-color: white;
+    border: 10px solid transparent;
+    border-radius: 10px;
+}
+
+hr {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    /* margin-top: 10px; */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10PX;
+    margin-top: 10px;
+}
+
+.Title {
+    font-size: 13px;
+    color: #969696;
+    font-weight: 600;
+}
+
+.content {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2B2B2B;
+} 
+
+.content p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2B2B2B;
+}
+
+#downContainer {
+    width: 100vw;
+    height: 58%;
+}
+
+#map {
+    height: 100%;
+
+}
+
+.attriName {
+    font-size: 11px; text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+
