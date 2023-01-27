@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
   <link rel="stylesheet" href="./style.css">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <title>Frontend Mentor | IP Address Tracker</title>
@@ -13,7 +12,7 @@
 <body>
   <div class="bigContainer">
     <div class="topBox">
-      <h1 class="title">IP Address Tracker</h1>
+      <h1 class="titleTop">IP Address Tracker</h1>
         <form id="searchContainer" onsubmit="buttonSubmit(event)">
           <input type="text" placeholder="Search for any IP address or domain" id="searchBox"> 
           <button id="searchButton" type="submit"><img src="./assets/icon-arrow.svg" alt="searchButton"></button>
@@ -21,22 +20,22 @@
     </div>
     <div class="popUp">
       <div class="address column">
-        <div class="add Title">IP ADDRESS</div>
+        <div class="add Titles">IP ADDRESS</div>
         <div class="content" id="addContent"></div>
       </div>
       <hr>
       <div class="location column">
-        <div class="location Title">LOCATION</div>
+        <div class="location Titles">LOCATION</div>
         <div class="content" id="locationContent"></div>
       </div>
       <hr>
       <div class="timezone column">
-        <div class="time Title">TIMEZONE</div>
+        <div class="time Titles">TIMEZONE</div>
         <div class="content" id="timeContent"></div>
       </div>
       <hr>
       <div class="isp column">
-        <div class="isp Title">ISP</div>
+        <div class="isp Titles">ISP</div>
         <div class="content" id="ispContent"></div>
       </div>
     </div>  
@@ -54,7 +53,6 @@
   </div>
   <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
     ></script>
   <script src="./main.js"></script>
 </body>

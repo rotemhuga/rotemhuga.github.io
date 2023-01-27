@@ -10,14 +10,16 @@ function initMap(lat, lng) {
   const marker = new google.maps.Marker({
     position: {lat, lng},
     map: map,
-    icon: ("./assets/icon-location.svg"),
+    icon: {
+      url:"./assets/Vector.png", 
+    scaledSize: new google.maps.Size(35, 40)
+  }
 
   });
 }
-
 window.initMap = initMap;
 
-
+let link = `https://geo.ipify.org/api/v2/country,city?apiKey=at_hwwLTW1MgBZT8cbHb9GaRVo7IAtn9&ipAddress=`
 //Deafult Local IP function 
   const functionDefault = (link) => {
     fetch(link) 
@@ -56,7 +58,7 @@ const buttonSubmit = (event) => {
     event.preventDefault()
     let valueIp = event.srcElement[0].value;
     console.log(valueIp)
-    linkValue = `https://geo.ipify.org/api/v2/country,city?apiKey=at_nVSFhwwElgg8qB2p8rvhZyKssloV4&ipAddress=${valueIp}`
+    linkValue = `https://geo.ipify.org/api/v2/country,city?apiKey=at_hwwLTW1MgBZT8cbHb9GaRVo7IAtn9&ipAddress=${valueIp}`
 
     functionDefault(linkValue)
 
