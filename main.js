@@ -57,11 +57,17 @@ let link = `https://geo.ipify.org/api/v2/country,city?apiKey=at_hwwLTW1MgBZT8cbH
 const buttonSubmit = (event) => {
     event.preventDefault()
     let valueIp = event.srcElement[0].value;
-    console.log(valueIp)
-    linkValue = `https://geo.ipify.org/api/v2/country,city?apiKey=at_hwwLTW1MgBZT8cbHb9GaRVo7IAtn9&ipAddress=${valueIp}`
-
-    functionDefault(linkValue)
-
+    function ValidateIPaddress(ipaddress) {
+    //checking if the user enter a valid addrees
+    if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(valueIp))
+    {
+      linkValue = `https://geo.ipify.org/api/v2/country,city?apiKey=at_hwwLTW1MgBZT8cbHb9GaRVo7IAtn9&ipAddress=${valueIp}`
+      functionDefault(linkValue)
+    } else {
+      alert("You have entered an invalid IP address!")
+    }
+  }
+  ValidateIPaddress(valueIp)
 }
 
 
